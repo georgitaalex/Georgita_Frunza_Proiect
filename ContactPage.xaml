@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Georgita_Frunza_Proiect.ContactPage"
+             Title="Contact Page">
+    <VerticalStackLayout Spacing="10" Margin="10">
+        <HorizontalStackLayout Spacing="10">
+            <Image Source="sportscheduler.png"
+ SemanticProperties.Description="SportScheduler"
+HeightRequest="64" />
+            <Label FontSize="22" FontAttributes="Bold" Text="SportScheduler" VerticalOptions="End" />
+            <Label FontSize="22" Text="v40.213" VerticalOptions="End" />
+        </HorizontalStackLayout>
+        <Label Text="This app will help you be on time for your sporty activities!" />
+        <Label Text="If you've got any questions or want to improve our app, please call us @ (410) 390-2824! Enjoy!" />
+
+    </VerticalStackLayout>
+</ContentPage>

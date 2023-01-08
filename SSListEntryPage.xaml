@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Georgita_Frunza_Proiect.SSListEntryPage"
+             Title="SportScheduler">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Adauga un SportSchedule!"
+ Clicked="OnSSListAddedClicked" />
+    </ContentPage.ToolbarItems>
+    <ListView x:Name="listView"
+ Margin="20"
+ ItemSelected="OnListViewItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+               
+                <ViewCell>
+                    <ViewCell.View>
+                        <Grid ColumnSpacing="0" RowSpacing="20">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50" />
+                                <RowDefinition Height="50" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="150" />
+                                <ColumnDefinition Width="150" />
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Grid.Row="0" Grid.Column="0">
+                                <Label Text="Nume Sport:" />
+                                <Label Text="Nume Instructor:" />
+                                <Label Text="Nume Locatie:" />
+                            </StackLayout>
+                            <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="{Binding Sport}"/>
+                            <Label Text="{Binding Instructor}"/>
+                            <Label Text="{Binding Locatie}"/>
+                        
+                        </StackLayout>
+                        </Grid>
+                    </ViewCell.View>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
